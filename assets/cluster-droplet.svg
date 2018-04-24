@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="46px" viewBox="0 0 36 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>Clustered Pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0780400815 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="111.034152%" id="linearGradient-2">
+            <stop stop-color="#387ef5" offset="0%"></stop>
+            <stop stop-color="#387ef5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Refill-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Main-Mapping" transform="translate(-314.000000, -297.000000)">
+            <g id="Pin----Cluster" transform="translate(318.000000, 299.000000)">
+                <g filter="url(#filter-1)">
+                    <ellipse id="Oval-6" fill-opacity="0.296365489" fill="#42495E" cx="14" cy="35.84" rx="5.04" ry="2.24"></ellipse>
+                    <path d="M2.95010752,22.5975434 C2.87817835,22.514328 2.84333984,22.474312 2.84333984,22.474312 C2.84333984,22.474312 2.84729402,22.4742758 2.85509712,22.4742048 C1.06363805,20.1217738 0,17.1850999 0,14 C0,6.2680135 6.2680135,0 14,0 C21.7319865,0 28,6.2680135 28,14 C28,17.1801698 26.9396521,20.1126821 25.1532163,22.4632769 C25.1651285,22.4668164 25.1695395,22.4704935 25.1661621,22.474312 C25.1075235,22.5406098 25.0489204,22.6069791 24.9903584,22.6734114 C24.7014135,23.0390432 24.3946121,23.3899132 24.0712704,23.724705 C18.8242982,29.7744195 14.1457631,35.9641316 14.0418721,35.838369 C8.47945053,29.1049124 5.27435245,25.3157085 3.81296342,23.6034028 C3.50993481,23.2820759 3.2219413,22.9464145 2.95010752,22.5975434 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
