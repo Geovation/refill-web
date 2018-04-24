@@ -1,0 +1,52 @@
+html, body, #map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.cluster {
+  font-size: 18px;
+  display: block;
+  width: 80px !important;
+  height: 100px !important;
+  text-align: center;
+  color: white;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+
+  background-image: url("../assets/cluster-droplet.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -2px;
+  top: -52px;
+  left: -36px;
+}
+.cluster.digits-1 {
+  background-size: 50px;
+  padding-top: 30px;
+  background-position-y: 20px;
+}
+.cluster.digits-2 {
+  background-size: 60px;
+  padding-top: 28px;
+  background-position-y: 15px;
+}
+.cluster.digits-3 {
+  background-size: 70px;
+  padding-top: 28px;
+  background-position-y: 10px;
+}
+.cluster.digits-4 {
+  background-size: 80px;
+  padding-top: 26px;
+  background-position-y: 4px;
+}
+.cluster.digits-5 {
+  background-size: 90px;
+  padding-top: 25px;
+}
