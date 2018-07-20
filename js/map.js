@@ -3,7 +3,6 @@
   var map = createMap();
   var clusterGroup = createClusterGroup();
 
-  firebase.initializeApp(config.FIREBASE_CONFIG);
   loadStations();
   centerMapToGeolocation();
 
@@ -67,33 +66,33 @@
    * Fetches all Refill stations from Firebase and loads them into the map.
    */
   function loadStations() {
-    firebase
-      .database()
-      .ref()
-      .child('refillStations')
-      .once('value', addStationMarkers, console.error);
+    const urlRefillStations = config.FIREBASE_CONFIG.databaseURL + "/refillStations.json";
+
+    fetch(urlRefillStations)
+      .then(response => response.json())
+      .then(addStationMarkers)
+      .catch(console.error)
   }
 
   /**
    * Adds markers for entire station list.
-   * @param   {firebase.database.DataSnapshot} stations Stations snapshot
+   * @param  refillStations Stations
    * @return  {void}
    */
-  function addStationMarkers(stations) {
-    var refillStations = stations.val();
-
-    for (id in refillStations) {
-      var station = refillStations[id];
-      addStationMarker(station);
+  function addStationMarkers(refillStations) {
+    for (let id in refillStations) {
+      const station = refillStations[id];
+      addStationMarker(station, id);
     }
   }
 
   /**
    * Adds a singular station marker to the map.
    * @param   {Object} station Station data Object
+   * @param   {string} id Station ID
    * @return  {void}
    */
-  function addStationMarker(station) {
+  function addStationMarker(station, id) {
     var droplet = L.icon({
       iconUrl: 'assets/droplet.svg',
       iconSize: 40,
@@ -108,7 +107,7 @@
         marker.bindPopup(popup, {offset: [0, -25]});
         clusterGroup.addLayer(marker);
       } else {
-        console.error("Marker doesn't have latitude and/or longitude", station);
+        console.error("Marker doesn't have latitude and/or longitude. ID: ", id);
       }
     }
     catch(error) {
