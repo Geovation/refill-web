@@ -33,7 +33,7 @@
       },
       MAPBOX_STREETS: {
         // mapbox Token: using Geovation one (Sebastian). TODO: replace with Refill one.
-        urlTemplate: 'https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoic2ViYXN0aWFub3ZpZGVnZW92YXRpb251ayIsImEiOiJhMzI2ZDBiZWE5N2IxMjBkMGQ5YzE2OGE0NGRjMDAxNCJ9.Op4DG9gS2dz15N7pXZNIJA',
+        urlTemplate: 'https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1Ijoic2ViYXN0aWFub3ZpZGVnZW92YXRpb251ayIsImEiOiJjamp0cTRiazU0b293M2xteDFtOXZwamtnIn0.hSJ5KscdUtQGAV11ohjLLw',
         options: {
           attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }
